@@ -1,0 +1,138 @@
+:root {
+  --mainsh: 10px 10px black;
+  --redB: rgb(175, 42, 42);
+  --mainboarder: 0.1em solid, black;
+  --minus: rgb(233, 41, 137);
+  --plus: rgb(41, 233, 127);
+}
+
+body {
+  margin: 0;
+  background-color: rgb(129, 132, 133);
+}
+
+.calc-body {
+  display: grid;
+  max-width: 300px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgba(255, 235, 205, 0.432);
+  border-radius: 3em;
+  border: var(--mainboarder);
+  position: absolute;
+  top: 20vh;
+  right: 10vw;
+  z-index: 5;
+  box-shadow: var(--mainsh);
+}
+
+.mods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mod {
+  margin: 1em;
+  width: 40px;
+  height: 40px;
+  background-color: var(--redB);
+  box-shadow: var(--mainsh);
+  border-radius: 50%;
+  border: var(--mainboarder);
+}
+
+.position {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.xpos {
+  display: flex;
+}
+.minusx {
+  margin: 1em;
+  width: 40px;
+  height: 40px;
+  background-color: var(--minus);
+  box-shadow: var(--mainsh);
+  border-radius: 50%;
+  border: var(--mainboarder);
+}
+
+.plusx {
+  margin: 1em;
+  width: 40px;
+  height: 40px;
+  background-color: var(--minus);
+  box-shadow: var(--mainsh);
+  border-radius: 50%;
+  border: var(--mainboarder);
+}
+
+.ypos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.minusy {
+  margin: 1em;
+  width: 40px;
+  height: 40px;
+  background-color: var(--plus);
+  box-shadow: var(--mainsh);
+  border-radius: 50%;
+  border: var(--mainboarder);
+}
+
+.plusy {
+  margin: 1em;
+  width: 40px;
+  height: 40px;
+  background-color: var(--plus);
+  box-shadow: var(--mainsh);
+  border-radius: 50%;
+  border: var(--mainboarder);
+}
+
+.rotators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.rotminus {
+  margin: 1em;
+  width: 80px;
+  height: 80px;
+  background-color: var(--minus);
+  box-shadow: var(--mainsh);
+  border-radius: 50%;
+  border: var(--mainboarder);
+}
+
+.rotplus {
+  margin: 1em;
+  width: 80px;
+  height: 80px;
+  background-color: var(--plus);
+  box-shadow: var(--mainsh);
+  border-radius: 50%;
+  border: var(--mainboarder);
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+}
